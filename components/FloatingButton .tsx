@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity, StyleSheet } from 'react-native';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
 
-export default function FloatingButton() {
+export const FloatingButton = () => {
     return (
         <View style={styles.container}>
             <TouchableOpacity style={styles.button}>

@@ -1,14 +1,10 @@
 import React from "react";
-import { View, Text, Pressable } from "react-native";
+import { View, Text } from "react-native";
 
-export default function App() {
-
-    
-    
+export const Meet = () => {
     return (
         <View>
             <Text>Hello World!!</Text>
-            
         </View>
     );
 }

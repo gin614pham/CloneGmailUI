@@ -6,20 +6,17 @@
  */
 
 import React from 'react';
-import Home from '../screens/Home';
-import Meet from '../screens/Meet';
+import {Home} from '../screens/Home';
+import {Meet} from '../screens/Meet';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import Icon from 'react-native-vector-icons/AntDesign';
-import CustomHeader from '../components/Header';
+import {CustomHeader} from '../components/Header';
 import { StyleSheet } from 'react-native';
 
 
 
-function App(): JSX.Element {
-
-  
-
+const App = () => {
   const Tab = createBottomTabNavigator();
   
   return (

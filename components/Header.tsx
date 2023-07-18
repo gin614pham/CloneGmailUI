@@ -2,13 +2,15 @@ import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
-export default function CustomHeader({ title } : {title: string}) {
+interface Props {
+  title: string;
+}
+export const CustomHeader = (prop: Props) =>  {
     return (
       <View style={styles.headerContainer}>
         <FontAwesome style={styles.headerMenu} name="bars" size={24} color="white" />
-        <Text style={styles.headerTitle}>{title}</Text>
+        <Text style={styles.headerTitle}>{prop.title}</Text>
         <Image style={styles.avatar} source={require('../images/avatar-default.png')} />
-        {/* <FontAwesome style={styles.headerMenu} name="search" size={24} color="white" /> */}
       </View>
     );
   };
